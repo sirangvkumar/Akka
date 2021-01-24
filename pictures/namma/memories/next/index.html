@@ -18,6 +18,7 @@
       <img id="unmute" src="assets/song.png">
       <img id="close" src="assets/back.png">
       <img id="next" src="assets/next.png">
+
       <a-mixin id="cube" geometry="primitive: box"></a-mixin>
       <a-mixin id="cube-hovered" material="color: magenta"></a-mixin>
       <a-mixin id="cube-selected" material="color: cyan"></a-mixin>
@@ -33,20 +34,19 @@
     <a-assets>
       <img id="bg" src="assets/bg.jpg" />
 
-      <img id="pic1" src="assets/1.jpg" />
-      <img id="pic2" src="assets/2.jpg" />
+      <img id="pic1" src="assets/1.png" />
+      <img id="pic2" src="assets/2.png" />
       <img id="pic3" src="assets/3.jpg" />
-      <img id="pic4" src="assets/4.png" />
-      <img id="pic5" src="assets/5.jpg" />
-      <img id="pic6" src="assets/6.jpg" />
-      <img id="pic7" src="assets/7.jpg" />
+      <img id="pic4" src="assets/4.jpg" />
+      <img id="pic5" src="assets/5.png" />
+      <img id="pic6" src="assets/6.png" />
+      <img id="pic7" src="assets/7.png" />
       <img id="pic8" src="assets/8.png" />
-      <img id="pic9" src="assets/9.png" />
+      <img id="pic9" src="assets/9.jpg" />
     </a-assets>
 
     <a-image id="mute-image" src="#mute" height="0.8" position="-1 0 0"></a-image>
     <a-image id="close-image" src="#close" height="0.8" width="0.8" position="0.5 0 0"></a-image>
-    <a-image id="next-image" src="#next" height="0.8" width="0.8" position="2 0 0"></a-image>
     
     <a-entity position="0 2 4">
       <a-entity camera look-controls wasd-controls>
@@ -62,40 +62,40 @@
 
     <!-- Gallery -->
     <a-curvedimage id="img1" src="#pic1" transparent="true" height="4" radius="4" theta-length="35" rotation="0  180 0"
-      position="-0.1 2.5 4">
-    </a-curvedimage>
+    position="-0.1 2.5 4">
+  </a-curvedimage>
 
-    <a-curvedimage id="img2" src="#pic2" transparent="true" height="4" radius="4" theta-length="40" rotation="0  140 0"
-      position="0 2.5 3.6">
-    </a-curvedimage>
+  <a-curvedimage id="img2" src="#pic2" transparent="true" height="4" radius="4" theta-length="40" rotation="0  140 0"
+    position="0 2.5 3.6">
+  </a-curvedimage>
 
-    <a-curvedimage id="img3" src="#pic3" transparent="true" height="4" radius="4" theta-length="40" rotation="0  100 0"
-      position="0 2.5 3.75">
-    </a-curvedimage>
+  <a-curvedimage id="img3" src="#pic3" transparent="true" height="4" radius="4" theta-length="40" rotation="0  100 0"
+    position="0 2.5 3.75">
+  </a-curvedimage>
 
-    <a-curvedimage id="img4" src="#pic4" transparent="true" height="4" radius="4" theta-length="40" rotation="0  60 0"
-      position="0 2.5 3.9">
-    </a-curvedimage>
+  <a-curvedimage id="img4" src="#pic4" transparent="true" height="4" radius="4" theta-length="40" rotation="0  60 0"
+    position="0 2.5 3.9">
+  </a-curvedimage>
 
-    <a-curvedimage id="img5" src="#pic5" transparent="true" height="4" radius="4" theta-length="40" rotation="0  20 0"
-      position="0 2.5 4">
-    </a-curvedimage>
+  <a-curvedimage id="img5" src="#pic5" transparent="true" height="4" radius="4" theta-length="40" rotation="0  20 0"
+    position="0 2.5 4">
+  </a-curvedimage>
 
-    <a-curvedimage id="img6" src="#pic6" transparent="true" height="4" radius="4" theta-length="40" rotation="0  340 0"
-      position="0 2.5 4.2">
-    </a-curvedimage>
+  <a-curvedimage id="img6" src="#pic6" transparent="true" height="4" radius="4" theta-length="40" rotation="0  340 0"
+    position="0 2.5 4.2">
+  </a-curvedimage>
 
-    <a-curvedimage id="img7" src="#pic7" transparent="true" height="4" radius="4" theta-length="40"
-      rotation="0  220 0" position="0 2.5 3.8">
-    </a-curvedimage>
+  <a-curvedimage id="img7" src="#pic7" transparent="true" height="4" radius="4" theta-length="40"
+    rotation="0  220 0" position="0 2.5 3.8">
+  </a-curvedimage>
 
-    <a-curvedimage id="img8" src="#pic8" transparent="true" height="4" radius="4" theta-length="40"
-      rotation="0  260 0" position="0 2.5 3.9">
-    </a-curvedimage>
+  <a-curvedimage id="img8" src="#pic8" transparent="true" height="4" radius="4" theta-length="40"
+    rotation="0  260 0" position="0 2.5 3.9">
+  </a-curvedimage>
 
-    <a-curvedimage id="img9" src="#pic9" transparent="true" height="4" radius="4" theta-length="40"
-      rotation="0  300 0" position="0 2.5 4">
-    </a-curvedimage>
+  <a-curvedimage id="img9" src="#pic9" transparent="true" height="4" radius="4" theta-length="40"
+    rotation="0  300 0" position="0 2.5 4">
+  </a-curvedimage>
 
     <a-sky src="#bg"></a-sky>
   </a-scene>
@@ -131,10 +131,6 @@
     });
     document.querySelector("#close-image").addEventListener('click', function () {
       window.location.href = "../index.html";
-
-    });
-    document.querySelector("#next-image").addEventListener('click', function () {
-      window.location.href = "next/index.html";
 
     });
   </script>
