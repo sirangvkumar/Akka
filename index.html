@@ -3,12 +3,25 @@
 
 <head>
     <script>
+        window.onload = function () {
+            var userName = sessionStorage.getItem('userName');
+            var password = sessionStorage.getItem('password');
+
+            if (userName == 'nv' && password == 'gv') {
+                window.location.replace("akka.html")
+            }
+        }
+    </script>
+    <script>
         function login() {
             var userName = document.getElementById("email").value;
             var password = document.getElementById("pwd1").value;
             if (userName.toLocaleLowerCase() == 'nv') {
                 if (password.toLocaleLowerCase() == 'gv') {
-                    window.location.href = "akka.html"
+                    sessionStorage.setItem('userName', userName);
+                    sessionStorage.setItem('password', password);
+                    
+                    window.location.replace("akka.html")
                 } else {
                     alert('Enter correct password')
                 }

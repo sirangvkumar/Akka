@@ -5,6 +5,16 @@
     <title> Happy Married Life Akka</title>
     <meta name="description" content="VR">
     <link rel="icon" href="Akka.png" type="image/png" sizes="16x16">
+    <script>
+        window.onload = function() {
+            var userName = sessionStorage.getItem('userName');
+            var password = sessionStorage.getItem('password');
+
+            if (userName != 'nv' || password != 'gv') {
+                window.location.replace("index.html")
+            }
+        }
+    </script>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script>
         AFRAME.registerComponent('auto-enter-vr', {

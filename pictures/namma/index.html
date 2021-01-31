@@ -6,8 +6,19 @@
     <title>Namma</title>
     <link rel="icon" href="Akka.png" type="image/png" sizes="16x16">
     <meta name="description" content="">
+    <script>
+        window.onload = function () {
+            var userName = sessionStorage.getItem('userName');
+            var password = sessionStorage.getItem('password');
+
+            if (userName != 'nv' || password != 'gv') {
+                window.location.replace("../index.html")
+            }
+        }
+    </script>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+    <script
+        src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
@@ -149,7 +160,7 @@
         });
         document.querySelector("#close-image").addEventListener('click', function () {
             window.location.href = "../../index.html";
-          });
+        });
         document.querySelector("#memory").addEventListener('click', function () {
             window.location.href = "memories/index.html";
         });
