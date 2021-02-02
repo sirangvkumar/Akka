@@ -14,10 +14,10 @@
     </script>
     <script>
         function login() {
-            var userName = document.getElementById("email").value;
-            var password = document.getElementById("pwd1").value;
-            if (userName.toLocaleLowerCase() == 'nv') {
-                if (password.toLocaleLowerCase() == 'gv') {
+            var userName = document.getElementById("email").value.toLocaleLowerCase();
+            var password = document.getElementById("pwd1").value.toLocaleLowerCase();
+            if (userName == 'nv') {
+                if (password == 'gv') {
                     sessionStorage.setItem('userName', userName);
                     sessionStorage.setItem('password', password);
                     
